@@ -1,0 +1,13 @@
+[package]
+name = "crossword"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-files = "0.6.6"
+actix-web = "4.9.0"
+crossword_generator = "0.0.2"
+serde = "1.0.215"
+serde_json = "1.0.133"
+tokio = "1.41.1"
+tokio-stream = "0.1.16"

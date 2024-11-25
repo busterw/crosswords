@@ -1,0 +1,85 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Container for the input box and button */
+#input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#wordsInput {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+#generateButton {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the crossword grid container */
+#gridContainer {
+    display: grid;
+    margin: 20px auto;
+    gap: 0px;
+    justify-content: center;
+    max-width: 100%;
+    grid-auto-rows: 30px; /* Ensure rows are 30px high */
+    grid-template-columns: repeat(10, 30px); /* Default grid (this will be updated dynamically) */
+}
+
+/* Styling for grid rows */
+.grid-row {
+    display: contents; /* Allow grid items to be placed inside a row */
+}
+
+/* Grid cells */
+.grid-cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Styling for black cells */
+.grid-cell.black {
+    background-color: #000;
+}
+
+/* Styling for white cells */
+.grid-cell.white {
+    background-color: #fff;
+}
+
+/* Button styles for the carousel */
+#carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
